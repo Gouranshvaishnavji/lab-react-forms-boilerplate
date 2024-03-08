@@ -67,7 +67,11 @@ function App() {
       <p>{formErrors.phoneno}</p>
       <div><input  id="register" type="submit" value='Register' /></div>
      </form>
+     <footer>
+      <p>Copyright &copy; 2022. All rights reserved.</p>
+     </footer>
     </div>
+
   )
 }
 

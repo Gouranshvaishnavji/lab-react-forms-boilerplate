@@ -72,4 +72,17 @@
   padding: 10px;
   border-radius: 5px;
  }
- 
+ footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjusted height for a more compact design */
+    background-color: #D0DAEE; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; /* Adjusted font size for readability */
+    color: #666666; /* Darker gray text for subtle contrast */
+   
+ }
