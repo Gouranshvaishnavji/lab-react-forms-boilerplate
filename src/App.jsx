@@ -6,6 +6,11 @@ function App() {
  const [formErrors, setFormErrors] = useState({});
  const [submit, setSubmit] = useState(false);
 
+
+ useEffect(() => {
+  console.log(formValues);
+}, [formValues]);
+
  const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
@@ -20,8 +25,8 @@ function App() {
 
  const validate = (values) => {
     let errors = {};
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i; // Added regex for email validation
-    const phoneRegex = /^\d{10}$/; // Regex for 10-digit phone number
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i; // found value on internet 
+    const phoneRegex = /^\d{10}$/; // this one too
 
     if (!values.username) {
       errors.username = "Please enter your first name";
